@@ -5,12 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DOM Starter Kit</title>
+    <title>MADLIBS</title>
     <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
-
+    <header>
+        <div class="wrapper">
+            <h1>Championship Game!</h1>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section>
+                <form action="#" id="madlibValues" method="POST">
+                    <label>
+                        Choose your team:
+                        <input type="text" id="userTeam1" placeholder="Team Name" name="userTeam1"/>
+                    </label>
+                    <label>
+                        Choose your opponent:
+                        <input type="text" id="userTeam2" placeholder="Opponent Name" name="userTeam2"/>
+                    </label>
+                    <fieldset>
+                        <legend>Choose your verbs:
+                            <label>
+                                <span class="noShow"> Verbs:</span>
+                                <input type="text" id="userVerb1" placeholder="Verb ending in 'ing'" name="userVerb1"/>
+                            </label>
+                            <label>
+                                <span class="noShow"> Verbs:</span>
+                                <input type="text" id="userVerb2" placeholder="Verb ending in 'ing'" name="userVerb2"/>
+                            </label>
+                            <label>
+                                <span class="noShow"> Verbs:</span>
+                                <input type="text" id="userVerb3" placeholder="Verb ending in 'ing'" name="userVerb3"/>
+                            </label>
+                        </legend>
+                    </fieldset>
+                    <label>Adjective:
+                        <input type="text" id="useradj1" placeholder="Adjective about a winning team" name="userAdj1">
+                    </label>
+                    <button type="submit">Generate Madlib</button>
+                </form>
+            </section>
+            <section>
+                <div id="overlay" class="overlay">
+                    <p>Welcome to the College Football Championships in Tampa, Florida! The sun is <span id="verb1" class="madlib_placeholder"></span> and the teams are COVID-FREE! The <span id="team1" class="madlib_placeholder team1"></span> have been <span id="verb2" class="madlib_placeholder"></span>. The <span id="team2" class="madlib_placeholder"></span> have been <span id="verb3" class="madlib_placeholder"></span>.</p>
+                    <p>The #1 ranked team this year is the <span id="adj1" class="madlib_placeholder"></span> <span id="team1b" class="madlib_placeholder team1"></span>.</p>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 <script src="js/index.js"></script>
 </html>
